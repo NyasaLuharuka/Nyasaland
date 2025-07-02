@@ -1,4 +1,4 @@
-body {
+* {
     font-family: 'Funnel Display';
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body {
 /* Navbar */
 
 .navbar {
-    background-color: #98FB98;
+    background-color: #c2aeed;
     overflow: hidden;
 }
 
@@ -28,7 +28,130 @@ body {
 /* Title */
 
 .title {
-    background-image: url('images/sky.jpg');
+    background-image: url('../images/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title .text {
+    padding-top: 350px;
+}
+
+.title .text .xl {
+    animation-name: slide-left;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    margin-left: 10%;
+
+}
+
+.title .text .md {
+    animation-name: slide-left;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    margin-left: 10%;
+}
+
+.title .text .small {
+    text-align: center;
+    animation-name: slide-left;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    margin-left: 10%;
+}
+
+.title .image {
+    padding: 15% 0px 0px 45%;
+}
+
+/* More */
+
+.more {
+    background-image: url('../images/flippedsky.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Signup */
+.signup {
+    min-height: 100vh;
+    background-image: url('../images/nightsky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+}
+
+.signup .wrapper {
+    box-sizing: border-box;
+    background-color: lightblue;
+    height: 100vh;
+    width: max(40%, 600px);
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup .wrapper .md {
+    font-size: 3rem;
+    padding-bottom: 10%;
+    text-decoration: underline;
+}
+
+.signup .wrapper form div {
+    padding: 5%;
+}
+
+.signup .wrapper button {
+    padding: 5%;
+    font-size: 10px;
+}
+
+.signup .wrapper form input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background-color: lightcyan;
+    transition: 150ms ease;
+}
+
+.signup .wrapper form input:hover {
+    border: 2px solid gray;
+}
+
+.signup .wrapper form input:focus {
+    outline: none;
+    border-color: gray;
+}
+
+.signup .wrapper:has(input:focus) > label {
+    background-color: gray;
+}
+
+/* Animation */
+
+@keyframes slide-left {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 10%;
+      width: 100%;
+    }
 }
 
 /* Font Sizes */
@@ -49,6 +172,6 @@ body {
 }
 
 .xl {
-    font-size: 60px;
-    font-weight: 700;
+    font-size: 100px;
+    font-weight: 600;
 }
