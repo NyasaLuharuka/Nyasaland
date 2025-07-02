@@ -105,14 +105,22 @@
     text-decoration: underline;
 }
 
-.signup .wrapper form div {
-    padding: 5%;
+.signup .wrapper form {
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.signup .wrapper button {
-    padding: 5%;
-    font-size: 10px;
+.signup .wrapper form > .signup .wrapper div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
 
 .signup .wrapper form input {
     box-sizing: border-box;
@@ -133,11 +141,44 @@
 
 .signup .wrapper form input:focus {
     outline: none;
-    border-color: gray;
+    border: 2px solid gray;
 }
 
 .signup .wrapper:has(input:focus) > label {
     background-color: gray;
+}
+
+.signup .wrapper form label {
+    flex-shrink: 0;
+    height: 50px;
+    width:50px;
+    background-color: gray;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+    margin-bottom: -50px;
+}
+
+.signup .wrapper form button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: 0.75em 1.5em;
+    background-color: gray;
+    color: lightcyan;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+.signup .wrapper form button:hover {
+    background-color: darkslategray;
+}
+
+.singup .wrapper p {
+    color: lightcoral;
 }
 
 /* Animation */
