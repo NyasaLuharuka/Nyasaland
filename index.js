@@ -22,26 +22,34 @@ app.get("/signup", (req, res)=>{
 
 app.post("/signup", async (req, res)=>{
 const data={
-    name:req.body.nameinput,
-    email:req.body.emailinput,
-    password:req.body.passwordinput
+    name:req.body.firstname,
+    email:req.body.email,
+    password:req.body.password
 }
+
+
 
 await collection.insertMany([data])
 
 res.render("home")
 })
 
-app.post("/login", async (req, res)=>{
-    const data={
-        email:req.body.emailinput,
-        password:req.body.passwordinput
+app.post("/login", async (req, res)=> {
+    try {
+        const check = await collection.findOne({email:req.body.email})
+        console.log(check, check.password)
+        if (check.password === req.body.password) {
+            res.render("home")
+        }
+        else {
+            res.send("wrong password")
+        }
     }
-    
-    await collection.insertMany([data])
-    
-    res.render("home")
-    })
+    catch{
+        res.send("wrong asdf")
+    }
+})
+
 
 app.listen(3000, ()=> {
     console.log("port connected")
