@@ -61,8 +61,13 @@
     margin-left: 10%;
 }
 
-.title .image {
+.arrow {
     padding: 15% 0px 0px 45%;
+}
+
+.signup .home {
+    height: 0;
+    width: 0;
 }
 
 /* More */
@@ -73,6 +78,98 @@
     background-size: cover;
     height: 100vh;
 }
+
+.allcircles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background: radial-gradient(circle at 100px 100px, #8be9ff, gray); /* Adds a radial gradient for a 3D effect */
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
+    
+}
+
+.allcircles .one {
+    margin-top: 300px;
+}
+
+.allcircles .two {
+    margin-top: 500px;
+}
+
+.more .arrow {
+    padding: 0% 0px 0px 45%;
+}
+
+/* Roadmap */
+.roadmap {
+    background-image: url('../images/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.roadmap .allcircles .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background: radial-gradient(circle at 100px 100px, pink, gray); /* Adds a radial gradient for a 3D effect */
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
+    animation-name: slide-left-circle;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+.roadmap {
+    position: relative;
+    
+}
+.roadmap .map-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 800px;
+}
+
+.roadmap .map-container .map-path {
+    position: absolute;
+    top: 0;
+    left: -1000px;
+    width: 300%;
+    height: 100%;
+    z-index: 0;
+}
+
+.roadmap .item {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.roadmap .item p {
+    margin-top: 8px;
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    color: #444;
+  }
+
 
 /* Signup */
 .signup {
@@ -181,6 +278,118 @@
     color: lightcoral;
 }
 
+/* Login */
+.login {
+    min-height: 100vh;
+    background-image: url('../images/nightsky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+}
+
+.login .wrapper {
+    box-sizing: border-box;
+    background-color: #ffccd9;
+    height: 100vh;
+    width: max(40%, 600px);
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .wrapper .md {
+    font-size: 3rem;
+    padding-bottom: 10%;
+    text-decoration: underline;
+}
+
+.login .wrapper form {
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.login .wrapper form > .signup .wrapper div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.login .wrapper form input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background-color: #ffebfb;
+    transition: 150ms ease;
+}
+
+.login .wrapper form input:hover {
+    border: 2px solid gray;
+}
+
+.login .wrapper form input:focus {
+    outline: none;
+    border: 2px solid gray;
+}
+
+.login .wrapper:has(input:focus) > label {
+    background-color: gray;
+}
+
+.login .wrapper form label {
+    flex-shrink: 0;
+    height: 50px;
+    width:50px;
+    background-color: gray;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+    margin-bottom: -50px;
+}
+
+.login .wrapper form button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: 0.75em 1.5em;
+    background-color: gray;
+    color: lightcyan;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+.login .wrapper form button:hover {
+    background-color: darkslategray;
+}
+
+.login .wrapper p {
+    color: lightseagreen;
+}
+
+.login .home {
+    width: 0;
+    height: 0;
+}
+
 /* Animation */
 
 @keyframes slide-left {
@@ -192,6 +401,15 @@
     to {
       margin-left: 10%;
       width: 100%;
+    }
+}
+
+@keyframes slide-left-circle {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
     }
 }
 

@@ -18,7 +18,7 @@
 <body>
     <div class="navbar">
         <img src="images/cowboy.png" alt="cowboy">
-        <a class="btn" ref="#">
+        <a class="btn" href="login.html">
             <i class="fas fa-user"></i> Start
         </a>
         <a href="#">Project Blog</a>
@@ -31,7 +31,7 @@
             <h1 class="xl">Nyasaland</h1>
             <p class="small">Welcome to Nyasaland! Words words words words words words words words</p>
         </div>
-        <div class="image">
+        <div class="arrow">
             <img src="images/arrow.png" alt="arrow pointing down">
         </div>
     </section>
@@ -40,49 +40,54 @@
         <h1 class="lg">Where is Nyasaland?</h1>
         <h1 class="small">Located off the coast of blah blah blah, Nyasaland is a calming virtual resort filled with so many things to do such as...</h1>
         <!--Make different bubbles with images for this one and add transitions-->
-        <ol>
-            <li>Look at coding projects</li>
-            <li>Learn about the awesome creator</li>
-            <li>Explore yourself with free helpful tools</li>
-        </ol>
-    </section>
 
-    <section class="signup">
-        <div class="wrapper">
-            <h1 class="md">Signup</h1>
-            <p id="errors" class="small"></p>
-        <form id="form">
-            <div>
-                <label for="firstname-input">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"/></svg>
-                </label>
-                <input required type="text" name="firstname" id="firstname-input" placeholder="First Name">
-            </div>
-            <div>
-                <label for="email-input">
-                    <span>@</span>
-                </label>
-                <input required type="email" name="email" id="email-input" placeholder="Email">
-            </div>
-            <div>
-                <label for="password-input">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"/></svg>
-                </label>
-                <input required type="password" name="password" id="password-input" placeholder="Password">
-            </div>
-            <div>
-                <label for="repeatpassword-input">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"/></svg>
-                </label>
-                <input required type="password" name="repeatpassword" id="repeatpassword-input" placeholder="Repeat Password">
-            </div>
-            <button class="small" type="submit">Sign Up!</button>
-        </form>
-        <p class="small">Already have an account? <a href="#">Login</a></p>
+        <div class="allcircles">
+            <h1 class="small circle">
+                Learn cool coding projects
+            </h1>
+            <h1 class="small circle one">
+                Learn about the world
+            </h1>
+            <h1 class="small circle two">
+                Learn about yourself
+            </h1>
         </div>
-        
+        <div class="arrow">
+            <img src="images/arrow.png" alt="arrow pointing down">
+        </div>
+    </section>
+    <section class="roadmap">
+      <div class="map-container">
+        <svg class="map-path" viewBox="0 0 1000 800">
+            <path d="M100,100 C300,200 500,0 700,300 S900,600 1000,700" fill="none" stroke="#aaa" stroke-width="6" />
+          </svg>
+
+          <div class="allcircles">
+            <div class="item" style="top: 90px; left: 100px;">
+                <a href="stillwaters.html"><img class="circle" src="images/beach.jpg" alt="beach"></a>
+                <p class="small">Still Waters</p>
+            </div>
+            <div class="item" style="top: -145px; left: 200px;">
+                <img class="circle" src="images/waterfall.jpg" alt="waterfall">
+                <p class="small">River of Reflection</p>
+            </div>
+            <div class="item" style="top: 150px; left: 450px;">
+                <img class="circle" src="images/cherry.jpg" alt="cherry">
+                <p class="small">Petals of Wisdom</p>
+            </div>
+            <div class="item" style="top: 200px; left: 800px;">
+                <img class="circle" src="images/fallriver.jpg" alt="fallriver">
+                <p class="small">Golden Echoes</p>
+            </div>
+            <div class="item" style="top: -130px; left: 600px;">
+                <img class="circle" src="images/snow.jpg" alt="winter">
+                <p class="small">Cozy Corners</p>
+                <!--Maybe dog pictures, reading, timer, etc.-->
+            </div>
+        </div>
+      </div>  
     </section>
     
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
