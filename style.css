@@ -6,6 +6,12 @@
 
 /* Navbar */
 
+.home {
+    height: 0;
+    width: 0;
+    
+}
+
 .navbar {
     background-color: #c2aeed;
     overflow: hidden;
@@ -170,6 +176,90 @@
     color: #444;
   }
 
+
+/* About Me*/
+.abtme {
+    background-image: url('../images/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.abtme .xl {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.what {
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+.what img {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25%;
+    border-color: black;
+    border-width: 4px;
+    border-style: dashed;
+}
+
+.what .small {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    flex-direction: row;
+    margin-right: 25px;
+    margin-top: 25%;
+}
+
+/* Project Blog */
+
+.main {
+    background-image: url('../images/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main .text {
+    text-align: center;
+}
+
+.wip {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+}
+
+.wip .wipfolders {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    flex-direction: row;
+}
+
+.wip .wipfolders div {
+    margin-right: 200px;
+}
+
+.fin {
+    margin-bottom: 100px;
+    margin-left: 50px;
+}
+
+.misc {
+    margin-bottom: 100px;
+    margin-left: 50px;
+}
 
 /* Signup */
 .signup {

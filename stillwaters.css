@@ -25,6 +25,11 @@
     width: 90px;
 }
 
+.home {
+    height: 0;
+    width: 0;
+}
+
 /* Title */
 
 .title {
@@ -73,20 +78,173 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
 }
 
 .more .xl {
     color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.more .small {
+    color: white;
+    text-align: center;
+    font-weight: 200;
+}
+
+.timing {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -200px;
+    margin-bottom: -300px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -400px;
+    margin-bottom: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 10%;
+    font-size: 1.5rem;
+    border: 2px solid lightblue;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 10px;
+}
+
+input[type="number"] {
+    border: none;
+    border-radius: 25%;
+    outline: none;
+    font-size: 5rem;
+    display: block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 
+input[readonly] {
+    background-color: lightblue;
+}
 
 
+  
+button:hover {
+    background: lightblue;
+    color: white;
+}
 
+.sound-select {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
+.sound-select .md {
+    padding-bottom: 20px;
+    text-decoration: underline;
+    color: darkslategray;
+}
 
+.sound-select select {
+    width: 200px;
+    background-color: white;
+    border-color: lightblue;
+    border-width: 5px;
+    padding: 8px;
+    font-size: 18px;
+}
 
+.breathe {
+    background-image: url('../images/mainbeach3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
 
+.boxbreathing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 500px;
+}
+.square {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 4px solid lightblue;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 50%;
+    background: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 4s ease-in-out;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkslategray;
+}
+  
+.dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: coral;
+    transition: all 4s ease-in-out;
+}
+
+.breathetitle {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    flex-direction: row;
+}
+
+.breathetitle .small {
+    margin-top: 50px;
+    
+    font-weight: 500;
+}
+
+.breathe .small {
+    margin-left: 20px;
+}
 
 @keyframes slide-left {
     from {
@@ -97,15 +255,6 @@
     to {
       margin-left: 10%;
       width: 100%;
-    }
-}
-
-@keyframes slide-left-circle {
-    from {
-        margin-left: 100%;
-    }
-    to {
-        margin-left: 0%;
     }
 }
 

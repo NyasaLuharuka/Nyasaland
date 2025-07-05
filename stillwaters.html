@@ -16,13 +16,17 @@
     <link rel="shortcut icon" href="images/favicon.ico" type = "image/x-icon"/>
 </head>
 <body>
+    <div class="home">
+        <a href="index.html"><img src="images/cowboytrans.png" alt="cowboy" height="65px" width="90px"></a>
+    </div>
     <div class="navbar">
-        <img src="images/cowboy.png" alt="cowboy">
+        
+       
         <a class="btn" href="login.html">
             <i class="fas fa-user"></i> Start
         </a>
-        <a href="#">Project Blog</a>
-        <a href="#">About Me</a>
+        <a href="blogpages/blog.html">Project Blog</a>
+        <a href="abtme.html">About Me</a>
     </div>
 
     <section class="title">
@@ -35,21 +39,58 @@
             <img src="images/arrow.png" alt="arrow pointing down">
         </div>
     </section>
+    
 
     <section class="more">
         <h1 class="xl">Timer</h1>
+        <p class="small">Any mindfulness activity takes time. Here's a timer to help :) If you want, you can choose a sound before starting the timer</p>
         
         <div class="timing">
-            <input type="number" id="min" min="0" step="1" placeholder="Minute">
-            <h2 class="xl colon"> : </h2>
-            <input type="number" id="sec" min="0" step="1" placeholder="Seconds">
+            <input type="number" id="hour" min="0" step="1" placeholder="H"></input>
+            <h2 class="colon xl"> : </h2>
+            <input type="number" id="min" min="0" step="1" placeholder="M"></input>
+            <h2 class="colon xl"> : </h2>
+            <input type="number" id="sec" min="0" step="1" placeholder="S"></input>
         </div>
         <div class="buttons">
-            <button id="start" onclick="startTime()">Start</button>
-            <button id="reset" onlick="resetTime()">Restart</button>
+            <button id="start" onclick="startTime()">Start Timer</button>
+            <button id="reset" onclick="resetTime()">Reset Timer</button>
+       
+        </div>
+        
+        <div class="sound-select">
+            <label for="sound" class="md">Sound:</label>
+            <select id="sound">
+              <option value="">--None--</option>
+              <option value="waves">Waves</option>
+              <option value="rain">Rain</option>
+              <option value="piano">Soft Piano</option>
+              <option value="spiritual">Spiritual</option>
+              <option value="guitar">Guitar</option>
+              <option value="jungle">Jungle</option>
+            </select>
+          </div>
+          <audio id="meditation-audio" loop></audio>
+    </section>
+    <section class="breathe">
+        <div class="breathetitle">
+            <h1 class="xl">Square Breathing</h1>
+            <h1 class="small">(with a circle)</h1>
+        </div>
+        <h1 class="small">Square breathing is a technique involving inhaling, holding, exhaling, and holding your breath for equal counts. Try it for a minute, and see how you feel!</h1>
+        
+        <div class="boxbreathing">
+            <div class="square">
+                <div class="circle" id="breathingcircle">
+                    <span id="breathtext">Inhale</span>
+                </div>
+                <div class="dot" id="dot"></div>
+            </div>
+            <button id="start1">Start</button>
         </div>
     </section>
     
-    <script src="main.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
