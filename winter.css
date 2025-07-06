@@ -75,7 +75,7 @@
 /* More */
 
 .more {
-    background-image: url('../images/snow.jpg');
+    background-image: url('../images/cozycat.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -86,8 +86,119 @@
 }
 
 
+select {
+    width: 200px;
+    background-color: white;
+    border-color: lightblue;
+    border-width: 5px;
+    padding: 8px;
+    font-size: 18px;
+}
 
 
+
+#floatBtn {
+    display: block;
+    margin: 20px 0px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #cce3f5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #34495e;
+  }
+
+#floatBtn:hover {
+    background-color: #34495e;
+    color: #cce3f5;
+    transition: ease 0.3s;
+
+}
+
+  /* Cloud style */
+  .cloud {
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 50px 5px 0 0 #fff, 80px -10px 0 0 #fff;
+    opacity: 0.8;
+    animation: floatCloud 20s linear forwards;
+  }
+
+  @keyframes floatCloud {
+    0% {
+      left: -150px;
+      transform: translateY(-50%) scale(1);
+    }
+    100% {
+      left: 110vw;
+      transform: translateY(-50%) scale(1);
+    }
+  }
+/*
+fdfd
+fd*/
+  /* Bookshelf icon */
+  #bookshelf {
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 110px;
+    background-image: url('../images/folders/notes.png'); /* bookshelf icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  /* Drawer */
+  #drawer {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100vh;
+    background-color: #fffaf4;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.4s ease;
+    padding: 20px;
+  }
+
+  #drawer.open {
+    right: 0;
+  }
+
+  #drawer h2 {
+    margin-top: 0;
+    color: #5a4b3c;
+  }
+
+  #noteInput {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fffdfb;
+  }
+
+  #saveNote {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #d9cfc3;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #2c3e50;
+  }
+  
 
 
 

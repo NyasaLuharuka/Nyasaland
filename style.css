@@ -176,6 +176,21 @@
     color: #444;
   }
 
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+path {
+    fill: none;
+    stroke: gray;
+    stroke-width: 4;
+    overflow: hidden;
+}
+
 
 /* About Me*/
 .abtme {
