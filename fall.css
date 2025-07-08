@@ -74,7 +74,7 @@
 
 /* More */
 
-.gratitudetree {
+.section1 {
     background-image: url('../images/fall2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,26 +82,83 @@
     padding: 40px;
 }
 
-.gratitudetree .xl {
+
+.section2 {
+    background-image: url('../images/fall2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 40px;
+}
+
+.xl {
     color: white;
 }
 
+input, textarea {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: brown;
+}
+
 #tree {
-    margin-top: 30px;
+    margin: 30px auto;
+    width: 80%;
     height: 300px;
+    background-size: contain;
     position: relative;
-    overflow: hidden;
 }
 
 .leaf {
     position: absolute;
-    font-size: 20px;
-    color: #d35400;
+    color: orange;
     animation: fall 5s linear forwards;
+    font-size: 18px;
 }
 
+#lantern {
+    position: relative;
+    height: 300px;
+    background: linear-gradient(to top, #fbe4b8, #fff6e0);
+    overflow: hidden;
+    margin-top: 20px;
+}
 
+.lantern {
+    position: absolute;
+    width: 60px;
+    height: 90px;
+    background: #fdd9a0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(255, 194, 102, 0.8);
+    animation: floatUp 7s linear forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    color: #5a3e2b;
+  }
 
+  @keyframes floatUp {
+    0% { bottom: 0; opacity: 1; }
+    100% { bottom: 100%; opacity: 0; }
+  }
 
 
 
