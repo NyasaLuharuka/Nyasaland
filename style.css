@@ -276,6 +276,31 @@ path {
     margin-left: 50px;
 }
 
+.blog {
+    background-image: url('../images/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.projupdate {
+    width: 90%;
+    height: 90%;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    background-color: lightpink;
+    opacity: 0.7;
+    border-radius: 5%;
+}
+
+.blog .content {
+    opacity: 1.0;
+    margin-left: 3%;
+    margin-top: 5%;
+    margin-right: 3%;
+}
+
 /* Signup */
 .signup {
     min-height: 100vh;
