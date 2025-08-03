@@ -78,7 +78,64 @@
     background-image: url('../images/waterfall2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+textarea {
+    width: 75%;
+    height: 75%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 0 0 10px black;
+}
+
+
+#save {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #45a049;
+    transition: 1s ease;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+li {
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.deleteBtn {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 3px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+}
+  
+.deleteBtn:hover {
+    background: #d32f2f;
 }
 
 .more .xl {
